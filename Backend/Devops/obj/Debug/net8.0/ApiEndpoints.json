@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "DevopsUserApi.Controllers.UsersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/createUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Common.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DevopsUserApi.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/deleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DevopsUserApi.Controllers.UsersController",
+    "Method": "ReadAllUser",
+    "RelativePath": "api/readAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DevopsUserApi.Controllers.UsersController",
+    "Method": "ReadUser",
+    "RelativePath": "api/readUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DevopsUserApi.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/UpdateUser",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Common.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
