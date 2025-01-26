@@ -1,5 +1,4 @@
 ﻿using Common;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interface;
 
@@ -22,7 +21,7 @@ namespace DevopsUserApi.Controllers
             try
             {
                 _userService.CreateUserService(model.id, model.name, model.mail);
-                return Ok("User created successfully");
+                return Ok(new { message = "User created successfully" });
             }
             catch (Exception ex)
             {
@@ -31,11 +30,12 @@ namespace DevopsUserApi.Controllers
         }
 
         [HttpGet("readAllUser")]
-        public IActionResult ReadAllUser()
+        public async Task<ActionResult<IEnumerable<UserModel>>> ReadAllUserRepository()
         {
             try
             {
-                return Ok(_userService.ReadAllUserService());
+                var users = await _userService.ReadAllUserRepository();
+                return Ok(users);
             }
             catch (Exception ex)
             {
@@ -48,6 +48,7 @@ namespace DevopsUserApi.Controllers
         {
             try
             {
+                id = id?.Trim();
                 return Ok(_userService.ReadUserService(id));
             }
             catch (Exception ex)
@@ -75,6 +76,7 @@ namespace DevopsUserApi.Controllers
         {
             try
             {
+                id = id?.Trim();
                 return Ok(_userService.DeleteUserService(id));
             }
             catch (Exception ex)

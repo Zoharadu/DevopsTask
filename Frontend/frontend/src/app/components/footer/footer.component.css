@@ -1,0 +1,29 @@
+.app-footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .app-footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .app-footer .contact-link {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .app-footer .contact-link:hover {
+    color: #f1c40f;
+  }
+  

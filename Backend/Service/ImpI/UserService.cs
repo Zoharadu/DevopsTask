@@ -1,10 +1,6 @@
-﻿using Repository.Interface;
+﻿using Common;
+using Repository.Interface;
 using Service.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Service.ImpI
 {
@@ -21,9 +17,9 @@ namespace Service.ImpI
         {
             _userRepository.CreateUserRepository(id, name, mail);
         }
-        public string ReadAllUserService()
+        public async Task<IEnumerable<UserModel>> ReadAllUserRepository()
         {
-            return _userRepository.ReadAllUserRepository();
+            return await _userRepository.ReadAllUserRepository();
         }
         public object ReadUserService(string id)
         {

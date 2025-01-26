@@ -1,0 +1,62 @@
+<div class="user-management">
+  <h1>Users Management</h1>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      [(ngModel)]="searchId"
+      placeholder="Enter User ID"
+      class="search-input"
+    />
+    <button class="search-btn" (click)="searchUserById()">Search</button>
+  </div>
+
+  <table *ngIf="users && users.length > 0" class="styled-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user?.id }}</td>
+        <td>{{ user?.name }}</td>
+        <td>{{ user?.mail }}</td>
+        <td>
+          <button class="edit-btn" (click)="openEditDialog(user)">Edit</button>
+          <button class="delete-btn" (click)="deleteUser(user?.id || '')">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="!users || users.length === 0">No users found.</p>
+
+  <button class="add-btn" (click)="openCreateDialog()">Add User</button>
+
+  <div *ngIf="showCreateDialog" class="dialog">
+    <h2>New User</h2>
+    <input [(ngModel)]="newUser.id" placeholder="Id" />
+    <input [(ngModel)]="newUser.name" placeholder="User Name" />
+    <input [(ngModel)]="newUser.mail" placeholder="Email" />
+    <div class="dialog-buttons">
+      <button class="save-btn" (click)="saveNewUser()">Save</button>
+      <button class="cancel-btn" (click)="closeDialog()">Cancel</button>
+    </div>
+  </div>
+
+  <div *ngIf="showEditDialog" class="dialog">
+    <h2>Edit User</h2>
+    <div *ngIf="selectedUser">
+      <input [(ngModel)]="selectedUser.name" placeholder="User Name" />
+      <input [(ngModel)]="selectedUser.mail" placeholder="Email" />
+    </div>
+    <div class="dialog-buttons">
+      <button class="save-btn" (click)="saveEditedUser()">Save</button>
+      <button class="cancel-btn" (click)="closeDialog()">Cancel</button>
+    </div>
+  </div>
+</div>

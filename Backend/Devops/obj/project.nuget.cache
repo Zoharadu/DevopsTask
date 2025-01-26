@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o6yMmSEXOAw=",
+  "dgSpecHash": "zTyI7HmZla0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Devops\\Devops.csproj",
+  "projectFilePath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Devops\\Devops.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zohar\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\zohar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",

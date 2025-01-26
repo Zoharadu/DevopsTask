@@ -33,13 +33,23 @@
   },
   {
     "ContainingType": "DevopsUserApi.Controllers.UsersController",
-    "Method": "ReadAllUser",
+    "Method": "ReadAllUserRepository",
     "RelativePath": "api/readAllUser",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Common.UserModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "DevopsUserApi.Controllers.UsersController",

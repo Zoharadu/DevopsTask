@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Service.Interface
     public interface IUserService
     {
         public void CreateUserService(string id, string name, string mail);
-        public string ReadAllUserService();
+        public Task<IEnumerable<UserModel>> ReadAllUserRepository();
         public object ReadUserService(string id);
         public string UpdateUserService(string id, string? name, string? mail);
         public string DeleteUserService(string id);

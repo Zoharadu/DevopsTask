@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Service\\Service.csproj": {}
+    "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj": {
+    "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\zohar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\obj\\",
+        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Data\\Data.csproj": {
+    "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\zohar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Data\\obj\\",
+        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj"
+              "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Repository\\Repository.csproj": {
+    "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\zohar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -177,11 +177,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Common\\Common.csproj"
+              "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Common\\Common.csproj"
               },
-              "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Data\\Data.csproj"
+              "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Data\\Data.csproj"
               }
             }
           }
@@ -220,14 +220,14 @@
         }
       }
     },
-    "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Service\\Service.csproj": {
+    "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\zohar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Service\\obj\\",
+        "outputPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -249,8 +249,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\DevopsUserApi\\Backend\\Repository\\Repository.csproj"
+              "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\zohar\\Desktop\\DevopsTask\\Backend\\Repository\\Repository.csproj"
               }
             }
           }

@@ -1,6 +1,7 @@
 ﻿using Common;
 using Devops.Data;
 using Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,16 +38,22 @@ namespace Repository.ImpI
             }
         }
 
-        public string ReadAllUserRepository()
+        public async Task<IEnumerable<UserModel>> ReadAllUserRepository()
         {
             try
             {
-                var users = _context.Users.ToList();//JSON
-                return string.Join("\n", users.Select(user => $"ID: {user.id}, Name: {user.name}, Mail: {user.mail}"));
+                return await _context.Users
+                .Select(user => new UserModel
+                {
+                    id = user.id.ToString(),
+                    name = user.name,
+                    mail = user.mail
+                })
+                .ToListAsync();
             }
             catch (Exception ex)
             {
-                return ("Failed to read users: " + ex.Message);
+                throw (ex);
             }
         }
 
