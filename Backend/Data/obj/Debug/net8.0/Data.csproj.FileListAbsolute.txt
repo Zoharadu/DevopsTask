@@ -45,3 +45,5 @@ C:\Users\zohar\Desktop\DevopsTask\Backend\Data\obj\Debug\net8.0\Data.dll
 C:\Users\zohar\Desktop\DevopsTask\Backend\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\zohar\Desktop\DevopsTask\Backend\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\zohar\Desktop\DevopsTask\Backend\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\zohar\Desktop\DevopsTask\Backend\Data\bin\Debug\net8.0\Data.runtimeconfig.json
+C:\Users\zohar\Desktop\DevopsTask\Backend\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache

@@ -81,7 +81,7 @@ namespace Repository.ImpI
                 var user = _context.Users.FirstOrDefault(u => u.id == id);
                 if (user == null)
                 {
-                    throw new ($"User with ID {id} not found.");
+                    throw new($"User with ID {id} not found.");
                 }
 
                 if (!string.IsNullOrEmpty(name))
@@ -94,7 +94,7 @@ namespace Repository.ImpI
                     user.mail = mail;
                 }
 
-                _context.SaveChanges(); 
+                _context.SaveChanges();
                 return ($"User with ID {id} has been updated.");
             }
             catch (Exception ex)
@@ -113,8 +113,8 @@ namespace Repository.ImpI
                     return ($"User with ID {id} not found.");
                 }
 
-                _context.Users.Remove(user); // הסרה מה-DbSet
-                _context.SaveChanges(); // שמירת השינויים בבסיס הנתונים
+                _context.Users.Remove(user); 
+                _context.SaveChanges();
                 return ($"User with ID {id} has been deleted.");
             }
             catch (Exception ex)

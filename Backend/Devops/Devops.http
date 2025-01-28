@@ -3,4 +3,3 @@
 GET {{Devops_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
