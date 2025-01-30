@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      - mysql
+    networks:
+      - devops_network
+
+  frontend:
+    build:
+      context: ./Frontend/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - devops_network
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: MySqlZohara1995
+      MYSQL_DATABASE: DevopsIAI
+    ports:
+      - "3306:3306"
+    networks:
+      - devops_network
+
+networks:
+  devops_network:
+    driver: bridge

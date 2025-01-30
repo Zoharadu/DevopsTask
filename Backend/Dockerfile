@@ -2,11 +2,11 @@
 
 WORKDIR /src
 
-COPY ["Devops/Devops.csproj", "Devops/"]
-COPY ["Common/Common.csproj", "Common/"]
-COPY ["Data/Data.csproj", "Data/"]
-COPY ["Repository/Repository.csproj", "Repository/"]
-COPY ["Service/Service.csproj", "Service/"]
+COPY ["./Devops/Devops.csproj", "Devops/"]
+COPY ["./Common/Common.csproj", "Common/"]
+COPY ["./Data/Data.csproj", "Data/"]
+COPY ["./Repository/Repository.csproj", "Repository/"]
+COPY ["./Service/Service.csproj", "Service/"]
 
 RUN dotnet restore "Devops/Devops.csproj"
 
@@ -23,7 +23,11 @@ COPY --from=build /app/publish .
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV ASPNETCORE_URLS=http://+:80
 
-EXPOSE 80
+EXPOSE 8080
 EXPOSE 3306
 
 ENTRYPOINT ["dotnet", "Devops.dll"]
+
+
+
+

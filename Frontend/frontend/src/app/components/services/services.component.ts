@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { UserService } from '../../services/user.service';
@@ -20,7 +20,7 @@ export class ServicesComponent implements OnInit {
   showEditDialog: boolean = false;
   searchId: string = '';
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.fetchUsers();
@@ -41,8 +41,18 @@ export class ServicesComponent implements OnInit {
     const searchId = this.searchId.trim();
     if (searchId) {
       this.userService.getUser(searchId).subscribe({
-        next: (user: UserModel[]) => {
-          this.users = user ? user : [];
+        next: (user: UserModel[] | string) => {
+          if (typeof user === "string") {
+            console.error(user);
+            alert(user);
+            return;
+          }
+      
+          if (Array.isArray(user)) {
+            this.users = user;
+          } else {
+            this.users = [user]; 
+          }
         },
         error: (err: Error) => {
           alert(`Failed to fetch user, Error: ${err.message}`);
